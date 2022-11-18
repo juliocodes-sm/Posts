@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #443874;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.card {
+    display: grid;
+    gap: 2.5rem;
+    background-image: linear-gradient(to right, #5b4b8d 40%, #8274A6);
+    color: #fff;
+    padding: 2.5rem;
+}
+
+.card__title {
+    font-size: 3.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.card__description {
+    margin-bottom: 4rem;
+}
+
+.card__cta {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #8274A6;
+    padding: 1.5rem;
+}
+
+.card--right {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card--right::before,
+.card--right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.card--right::before {
+    width: 100%;
+    height: 1px;
+    transform: translateY(-50%);
+}
+
+.card--right::after {
+    width: 1px;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card__group {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.card__stat-number {
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+    margin-bottom: .6rem;
+}
+
+.card__stat-name {
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 52.25em) {
+    .card {
+        max-width: 90rem;
+        grid-auto-flow: column;
+        align-items: center;
+        padding: 5rem;
+    }
+
+    .card__stat-number {
+        font-size: 4rem;
+    }
+}

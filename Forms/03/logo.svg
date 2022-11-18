@@ -1,0 +1,33 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1246 1536" width="256" height="316">
+	<title>source file-ai</title>
+	<style>
+		.s0 { fill: #33ffbb } 
+		.s1 { fill: #2ad39f } 
+		.s2 { fill: #0170f0 } 
+		.s3 { fill: #31acff } 
+	</style>
+	<g id="Layer 1">
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="s0" d="m0.8 1191.2l128.4-73.8 318.7 249.9 43 169z"/>
+			<path id="&lt;Path&gt;" class="s1" d="m3.2 332.9l122.4 91.8 3.6 692.7-128.4 73.8z"/>
+			<path id="&lt;Path&gt;" class="s1" d="m1122.8 1041.4v-695.8l122.4-73v860.6z"/>
+			<path id="&lt;Path&gt;" class="s0" d="m782.1 160.9l-34.8-159.2 497.9 270.9-122.4 73z"/>
+			<g id="&lt;Group&gt;">
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s2" d="m576.9 1314.8l-112.5-251.6v-725.9h-132.6l248.6-115.9v1096.2z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s3" d="m576.9 1314.8l-324.2-255.8v-143.2l211.7 147.4z"/>
+				</g>
+			</g>
+			<g id="&lt;Group&gt;">
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s2" d="m984 528.8l-225-112.2 1.9 665.1-114.1 234.4-1.9 1.5-1.9-1096.1 341 173.9z"/>
+				</g>
+				<g id="&lt;Group&gt;">
+					<path id="&lt;Path&gt;" class="s3" d="m646.8 1316.1l114.1-234.4 223.1-172v146.5z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
