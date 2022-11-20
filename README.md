@@ -9,7 +9,7 @@ The general caption format is as follows
 >
 >If you found this content useful, please tap the ♥️ icon and give me a follow. I would greatly appreciate it. Also, if you have any feedback, questions or concerns, let me know in the comments section 💬. Thanks ☺️
 
-In the given caption example, the path specified means navigate to the `Posts` repo, then the `Footers` folder, and finally the `01` folder. This is where the code for that particular reel will be. In order to avoid further confusion, the `numbered` folder will include a thumbnail of the project as well.
+In the given caption example, the path specified means navigate to the `Posts` repo, then the `Footers` folder, and finally the `01` folder. This is where the code for that particular reel will be.
 
 ## License
 
