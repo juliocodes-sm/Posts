@@ -1,0 +1,100 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    background-color: #141416;
+}
+
+/* ======================== */
+.container {
+    max-width: 980px;
+    margin-inline: auto;
+    padding: 100px 15px;
+}
+
+.title {
+    font-size: clamp(26px, 5vw, 40px);
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.accordion-panel {
+    padding: 7px 21px;
+    margin-bottom: 24px;
+    border: 1px solid #777e91;
+    border-radius: 8px;
+}
+
+.accordion input {
+    display: none;
+}
+
+.accordion label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+    padding-block: 7px;
+    color: #f4f5f6;
+    cursor: pointer;
+    transition: color 0.25s;
+}
+
+.accordion label:hover,
+.accordion input:checked + label {
+    color: #3b71fe;
+}
+
+.accordion i {
+    color: #3b71fe;
+}
+
+.accordion .close {
+    display: none;
+}
+
+.accordion input:checked + label .close {
+    display: block;
+}
+
+.accordion input:checked + label .open {
+    display: none;
+}
+
+.accordion-body {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.25s ease-in-out;
+}
+
+.accordion-answer {
+    font-size: 14px;
+    color: #777e91;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: opacity 0.75s, transform 0.15s;
+}
+
+.accordion input:checked ~ .accordion-body {
+    height: max-content;
+}
+
+.accordion input:checked ~ .accordion-body .accordion-answer {
+    opacity: 1;
+    transform: scale(1);
+}
