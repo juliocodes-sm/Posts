@@ -1,0 +1,105 @@
+/* General styling */
+@font-face {
+    font-family: "Mario";
+    src: url("./Super Mario Bros. 2.ttf") format("TrueType");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background-color: #090909;
+    font-family: "Mario", sans-serif;
+    text-shadow: 2px 2px #090909;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    line-height: 1.5;
+}
+
+/* General styling end */
+
+.game {
+    max-width: 440px;
+
+    display: grid;
+    align-items: center;
+    gap: 50px;
+    padding: 75px 25px;
+    background: url("./images/game__background.jpg") center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.game__health {
+    position: relative;
+    width: 200px;
+    height: 25px;
+    border: 2px solid #fff;
+    margin-left: auto;
+}
+.game__health-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+}
+.game__health-bar {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
+.game__title {
+    font-size: 24px;
+}
+.game__number {
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 75px;
+    font-size: 32px;
+    color: #ce4b05;
+    margin: 20px auto;
+    background: url("./images/game__mistery-box.png") center no-repeat;
+    background-size: cover;
+}
+.game__feedback {
+    font-size: 14px;
+}
+.game footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+input,
+button {
+    background: none;
+    font: inherit;
+    color: inherit;
+    border: none;
+}
+
+.game__guess {
+    grid-column: 1/-1;
+    padding: 5px;
+    border: 2px solid #fff;
+}
+
+.game__button {
+    padding: 10px 15px;
+    box-shadow: 5px 5px #090909;
+    cursor: pointer;
+}
+
+.game__button-play {
+    background-color: green;
+}
+.game__button-reset {
+    background-color: blue;
+}
