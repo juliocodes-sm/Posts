@@ -33,7 +33,7 @@ const playGame = () => {
     if (!gameOver) {
         if (guess <= 0) {
             updateData(gameFeedbackElement, "Enter a valid number!");
-        } else if (guess == randomGuessNumber) {
+        } else if (guess === randomGuessNumber) {
             gameNumberElement.textContent = randomGuessNumber;
             updateData(gameFeedbackElement, "You win!");
             gameOver = true;
