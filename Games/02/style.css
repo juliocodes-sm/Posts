@@ -1,0 +1,107 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background-color: #090909;
+    line-height: 1.5;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+/* General styling end */
+.game {
+    width: 640px;
+    height: 480px;
+    background: url("./images/background.webp") center no-repeat;
+    background-size: cover;
+    padding: 25px;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    text-transform: uppercase;
+}
+.game header {
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    align-items: center;
+}
+.player-health {
+    position: relative;
+    border: 2px solid #fff;
+}
+.player-health-bar {
+    height: 25px;
+    background-color: green;
+}
+.timer {
+    background-color: red;
+    text-align: center;
+    outline: 5px solid #fff;
+    z-index: 100;
+}
+.player-health span {
+    position: absolute;
+    bottom: 0;
+    translate: 0 30px;
+}
+.player-health-2 {
+    right: 0;
+}
+.main {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    place-items: center;
+    padding: 25px;
+}
+.game-feedback {
+    position: absolute;
+    top: 0;
+    translate: 0 75px;
+    transform: skewX(-25deg);
+    background-color: #fff;
+    color: #000;
+    padding: 5px 20px;
+    border: 2px solid #000;
+}
+.message {
+    display: inline-block;
+    transform: skewX(25deg);
+    font-size: 14px;
+}
+.player {
+    font-size: 75px;
+}
+.game footer {
+    display: flex;
+    gap: 25px;
+}
+.game-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgb(0 0 0 / 50%);
+    transform: skewX(-25deg);
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: background 0.25s;
+}
+.game-btn:hover {
+    background: #000;
+}
+.game-btn span {
+    display: inline-block;
+    transform: skewX(25deg);
+}
+.reset-btn {
+    margin-left: auto;
+}

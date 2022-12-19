@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rock, Paper, Scissors</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./app.js" defer></script>
+    </head>
+    <body>
+        <section class="game">
+            <header>
+                <div class="player-health">
+                    <div class="player-health-bar player-1-health-bar"></div>
+                    <span>Player 1</span>
+                </div>
+                <div class="timer">
+                    <span>60</span>
+                </div>
+                <div class="player-health">
+                    <div class="player-health-bar player-2-health-bar"></div>
+                    <span class="player-health-2">Player 2</span>
+                </div>
+            </header>
+            <div class="main">
+                <div class="game-feedback">
+                    <span class="message"></span>
+                </div>
+                <div>
+                    <span class="player player-1">🤜</span>
+                </div>
+                <div>
+                    <span>VS</span>
+                </div>
+                <div>
+                    <span class="player player-2">🤛</span>
+                </div>
+            </div>
+            <footer>
+                <button type="button" class="game-btn play-btn" data-option="Rock">
+                    <span>Rock</span>
+                </button>
+                <button type="button" class="game-btn play-btn" data-option="Paper">
+                    <span>Paper</span>
+                </button>
+                <button type="button" class="game-btn play-btn" data-option="Scissors">
+                    <span>Scissors</span>
+                </button>
+                <button type="button" class="game-btn reset-btn">
+                    <span>Reset</span>
+                </button>
+            </footer>
+        </section>
+    </body>
+</html>
